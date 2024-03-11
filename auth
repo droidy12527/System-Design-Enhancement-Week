@@ -1,0 +1,19 @@
+Endpoint Type: POST
+Route: /auth
+Type: "application/json"
+Auth: No Auth Required
+Description: When the endpoint is hit with correct username and password, 200 Status code and headers are supplied back with JWT Token.
+Expected Format: {
+    username: "hello@simple.com",
+    password: "asimplepassword",
+}
+Success Code: 200
+Success Response: {
+    "status": "ok"
+}
+Success Headers: {
+    "Authorization": "Bearer asudhausdbhasbfhasdbfhasbdfdsf",
+}
+Failure Code: 500
+Failure Response: {}
+Failure Headers: {}
