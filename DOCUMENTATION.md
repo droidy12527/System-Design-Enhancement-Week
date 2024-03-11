@@ -43,7 +43,8 @@
 - **Request Headers:** 
   ```json
   { "Authorization": "Bearer <JWT_token>" }
-  - **Response:** 
+
+- **Response:** 
 - `200 OK`: 
   ```
   { "success": true, "location": "US" }
@@ -79,7 +80,8 @@
 - **Request Body:** 
   ```json
   { "video_id": "123456", "message": "New video uploaded" }
-  - **Response:** 
+
+- **Response:** 
 - `200 OK`: 
   ```
   { "success": true, "message": "Notification broadcasted successfully" }
@@ -114,7 +116,8 @@
 - **Request Headers:** 
   ```json
   { "Authorization": "Bearer <JWT_token>" }
-  - **Response:** 
+
+- **Response:** 
 - `200 OK`: 
   ```
   { "success": true, "profile": { "username": "example", "email": "example@example.com", "subscription": "HD Plan" } }
@@ -131,8 +134,9 @@
 - **Description:** Allows internal teams to upload videos for transcription and distribution.
 - **Request Body:** 
   ```json
-  { "video_file": "<video_data>", "region": "US" 
-  - **Response:** 
+  { "video_file": "<video_data>", "region": "US"
+
+- **Response:** 
 - `200 OK`: 
   ```
   { "success": true, "message": "Video uploaded successfully" }
@@ -141,6 +145,3 @@
   ```
   { "success": false, "message": "Error uploading video" }
   ```
-
-
-
